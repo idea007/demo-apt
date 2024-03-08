@@ -30,7 +30,6 @@ public class BindingProcessor extends AbstractProcessor {
 
     /**
      * ProcessingEnvironment :注释处理工具框架将为注释处理器提供实现该接口的对象，以便处理器可以使用框架提供的设施来编写新文件、报告错误消息以及查找其他实用程序。
-     *
      * @param processingEnv 访问设施的环境工具框架,提供给处理器
      */
     @Override
@@ -42,7 +41,6 @@ public class BindingProcessor extends AbstractProcessor {
 
     /**
      * 一个抽象注释处理器，旨在方便大多数具体注释处理器的超类
-     *
      * @return
      */
     @Override
@@ -97,5 +95,4 @@ public class BindingProcessor extends AbstractProcessor {
         messager.printMessage(Diagnostic.Kind.NOTE, "------ 耗时：" + (System.nanoTime() - preTime));
         return false;
     }
-
 }

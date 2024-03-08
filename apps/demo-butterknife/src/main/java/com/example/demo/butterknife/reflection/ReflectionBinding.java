@@ -8,13 +8,10 @@ import com.example.demo.lib.annotations.ReflectionBindView;
 import java.lang.reflect.Field;
 
 public class ReflectionBinding {
-    public static String TAG = ReflectionBinding.class.getSimpleName();
-
     public static void bind(Activity activity) {
         // 反射方式遍历目标类所有 field
         for (Field field : activity.getClass().getDeclaredFields()) {
             // if(field.isAnnotationPresent(ReflectionBindView.class))
-            Log.i(TAG, "------ field.getName()"+field.getName());
             ReflectionBindView bindView = field.getAnnotation(ReflectionBindView.class);
             if (bindView != null) {
                 try {
