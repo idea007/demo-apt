@@ -7,7 +7,7 @@
 // * @Date 2023/8/7 19:56
 // */
 //public class RouterCollector {
-//    public static final String DEFAULT_SCHEME = "yingzi";
+//    public static final String DEFAULT_SCHEME = "dafay";
 //
 //    static final void init() {
 //        MapperCollector.init();

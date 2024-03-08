@@ -16,7 +16,7 @@ android {
 
         javaCompileOptions {
             annotationProcessorOptions {
-                arguments += [defaultRouterScheme: "yingzi"]
+                arguments += [defaultRouterScheme: "dafay"]
             }
         }
     }

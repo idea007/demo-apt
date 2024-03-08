@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ResolveResult resolveResult = RouterManager.instance.resolve("scheme://test_clazz/123456/answer/654321");
-                Log.i(TAG, "------ resolveResult.target=" + resolveResult);
+                Log.i(TAG, "------ resolveResult.target.class=" + resolveResult.target.getName());
             }
         });
     }
