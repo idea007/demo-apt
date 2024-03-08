@@ -1,0 +1,17 @@
+
+rootProject.name = "demo-apt"
+
+
+include ':apps:demo-butterknife'
+include ':apps:demo-butterknife:lib-annotations'
+include ':apps:demo-butterknife:lib-processor'
+
+
+include ':apps:demo-autoservice'
+include ':apps:demo-router'
+include ':apps:demo-router:lib-annotations'
+include ':apps:demo-router:lib-processor'
+include ':apps:demo-router:biz_account'
+include ':apps:demo-router:lib-router'
+include ':apps:demo-router:lib-placeholder'
+include ':apps:demo-router:lib-model'
