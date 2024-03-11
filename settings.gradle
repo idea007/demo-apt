@@ -18,5 +18,4 @@ include ':apps:demo-router:lib-router'
 include ':apps:demo-router:lib-placeholder'
 include ':apps:demo-router:lib-model'
 
-include ':apps:demo-dagger'
-include ':apps:demo-dagger'
+include ':apps:demo-dagger2'

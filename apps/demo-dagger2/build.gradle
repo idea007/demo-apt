@@ -3,22 +3,16 @@ plugins {
 }
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 34
 
     defaultConfig {
-        applicationId "com.example.demo.router"
+        applicationId "com.example.demo.dagger2"
         minSdkVersion 21
-        targetSdkVersion 33
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
-        javaCompileOptions {
-            annotationProcessorOptions {
-                arguments += [defaultRouterScheme: "dafay"]
-            }
-        }
     }
 
     buildTypes {
@@ -42,8 +36,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    implementation project(path: ':apps:demo-router:lib-annotations')
-    implementation project(':apps:demo-router:lib-router')
-    implementation project(':apps:demo-router:lib-placeholder')
-    annotationProcessor project(':apps:demo-router:lib-processor')
+
+    implementation 'com.google.dagger:dagger:2.50'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.50'
 }
