@@ -19,3 +19,8 @@ include ':apps:demo-router:lib-placeholder'
 include ':apps:demo-router:lib-model'
 
 include ':apps:demo-dagger2'
+
+
+include ':lib-base'
+include ':apps:demo-mvc'
+include ':apps:demo-mvp'

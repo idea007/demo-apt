@@ -9,3 +9,7 @@
 
 ## demo-router
 基于 apt，实现 Router 最基本的原理：通过 uri 匹配对应的 class 类
+
+## demo-dagger2
+dagger2 使用示例
+

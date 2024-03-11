@@ -12,20 +12,11 @@ public class Frame {
 
     private String material;
 
-    @Inject
-    public Frame() {
-    }
-
     public Frame(String material) {
         this.material = material;
     }
 
     public void print() {
-        if (material != null) {
-            Log.i("Frame", "------ 车架: " + material);
-        } else {
-            Log.i("Frame", "------ 车架: 高碳钢");
-        }
-
+        Log.i("Frame", "------ 车架: " + material);
     }
 }
