@@ -1,14 +1,11 @@
 
 rootProject.name = "demo-apt"
 
-
 include ':apps:demo-butterknife'
 include ':apps:demo-butterknife:lib-annotations'
 include ':apps:demo-butterknife:lib-processor'
 
-
 include ':apps:demo-autoservice'
-
 
 include ':apps:demo-router'
 include ':apps:demo-router:biz-account'
@@ -20,8 +17,9 @@ include ':apps:demo-router:lib-model'
 
 include ':apps:demo-dagger2'
 
-
-include ':lib-base'
 include ':apps:demo-mvc'
 include ':apps:demo-mvp'
 include ':apps:demo-mvvm'
+include ':apps:demo-mvp-dagger'
+
+include ':lib-base'
