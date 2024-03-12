@@ -1,4 +1,4 @@
-package com.example.demo.mvp
+package com.dafay.demo.demo_mvp
 
 import android.text.Editable
 import com.dafay.demo.lib.base.data.MockDataSource
@@ -29,11 +29,13 @@ class LoginPresenterImpl(val iLoginView: ILoginView) : ILoginPresenter {
         MockDataSource.login(account, pwd, object : MockDataSource.RequestCallback {
             override fun onSuccess() {
                 iLoginView.dismissViewLoading()
+                iLoginView.showToast("登录成功")
                 // 显示 toast 也要交由 iView 去显示
             }
 
             override fun onFailure() {
                 iLoginView.dismissViewLoading()
+                iLoginView.showToast("登录失败")
             }
         })
     }

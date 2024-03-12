@@ -1,4 +1,4 @@
-package com.example.demo.mvp
+package com.dafay.demo.demo_mvp
 
 import androidx.core.widget.doAfterTextChanged
 import by.kirich1409.viewbindingdelegate.viewBinding
@@ -7,6 +7,7 @@ import com.dafay.demo.lib.base.databinding.ActivityLoginBinding
 import com.dafay.demo.lib.base.ui.base.BaseActivity
 import com.dafay.demo.lib.base.utils.hideLoading
 import com.dafay.demo.lib.base.utils.showLoading
+import com.dafay.demo.lib.base.utils.toast
 
 /**
  * TODO: mvp
@@ -64,5 +65,9 @@ class LoginActivity : BaseActivity(com.dafay.demo.lib.base.R.layout.activity_log
 
     override fun updateConfirmBtn(isEnabled: Boolean) {
         binding.btnConfirm.isEnabled = isEnabled
+    }
+
+    override fun showToast(content: String) {
+        toast(content)
     }
 }

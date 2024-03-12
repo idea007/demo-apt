@@ -1,4 +1,4 @@
-package com.example.demo.mvp
+package com.dafay.demo.demo_mvp
 
 import com.dafay.demo.lib.base.data.LoggedInfo
 
@@ -18,4 +18,6 @@ interface ILoginView {
     fun dismissViewLoading()
 
     fun updateConfirmBtn(isEnabled: Boolean)
+
+    fun showToast(content:String)
 }
