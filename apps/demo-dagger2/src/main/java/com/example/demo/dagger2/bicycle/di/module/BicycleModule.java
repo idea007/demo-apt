@@ -1,4 +1,13 @@
-package com.example.demo.dagger2.bicycle;
+package com.example.demo.dagger2.bicycle.di.module;
+
+import com.example.demo.dagger2.bicycle.AitFork;
+import com.example.demo.dagger2.bicycle.Frame;
+import com.example.demo.dagger2.bicycle.GearSystem;
+import com.example.demo.dagger2.bicycle.IFork;
+import com.example.demo.dagger2.bicycle.Shifter;
+import com.example.demo.dagger2.bicycle.SpringFork;
+
+import javax.inject.Named;
 
 import dagger.Module;
 import dagger.Provides;
@@ -42,5 +51,16 @@ public class BicycleModule {
     GearSystem provideGearSystem(){
         return new GearSystem("禧玛诺");
     }
+
+    /**
+     * @Named 注解用于标识依赖项，以便在需要提供多个相同类型但不同实例的依赖项时进行区分
+     */
+    @Provides
+    @Named("Air Fork")
+    IFork provideAirFork(){return new AitFork();}
+
+    @Provides
+    @Named("Spring Fork")
+    IFork provideSpringFork(){return new SpringFork();}
 
 }

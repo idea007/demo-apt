@@ -24,7 +24,7 @@ public class GearSystem {
 
     private String name;
 
-    GearSystem(String name) {
+    public GearSystem(String name) {
         this.name = name;
     }
 
